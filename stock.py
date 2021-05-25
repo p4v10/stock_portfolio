@@ -13,6 +13,14 @@ amount = [22,11,12,23,3,3,10]
 prices = []
 total = []
 
+#bool_v = True
+
+#if bool_v == True:
+    #ticker = st.multiselect(label='What stock do you want to add?', options=['AAPL', 'TSLA', 'FB', 'MSFT', 'AMZN', 'GOOG', 'NVDA'], key='one')
+    #tickers.append(ticker)
+
+
+
 for ticker in tickers:
     df = web.DataReader(ticker, 'yahoo', dt.datetime(2019,8,1), dt.datetime.now())
     price = df[-1:]['Close'][0]

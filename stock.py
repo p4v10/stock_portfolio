@@ -55,7 +55,7 @@ for ticker in tickers:
 fig, ax = plt.subplots(figsize=(14,7))
 
 ax.set_facecolor('black')
-ax.figure.set_facecolor('#121212')
+ax.figure.set_facecolor('#FFFFFF')
 
 ax.tick_params(axis='x', color='white')
 ax.tick_params(axis='y', color='white')

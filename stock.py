@@ -18,6 +18,7 @@ bool_v = True
 # Sidebar section
 st.sidebar.header("Please add some stocks")
 
+
 if (bool_v):
     ticker = st.sidebar.selectbox("What stock to add?", ['AAPL', 'TSLA', 'FB', 'MSFT', 'AMZN', 'GOOG', 'NVDA', 'ABNB', 'ALL', 'CMG', 'BAC', 'JPM', 'GME', 'HD'],key="new")
     amount = st.sidebar.number_input("How many shares?",1,100,2)
@@ -27,7 +28,7 @@ if (bool_v):
     amount2 = st.sidebar.number_input("How many shares?",1,100,4, key="new2")
     tickers.append(ticker2)
     amounts.append(amount2)
-    ticker3 = st.sidebar.selectbox("What stock to add?", ['AAPL', 'TSLA', 'FB', 'MSFT', 'AMZN', 'GOOG', 'NVDA', 'ABNB', 'ALL', 'CMG', 'BAC', 'JPM', 'GME', 'HD'],key="new2")
+    ticker3 = st.sidebar.selectbox("What stock to add?", ['AAPL', 'TSLA', 'FB', 'MSFT', 'AMZN', 'GOOG', 'NVDA', 'ABNB', 'ALL', 'CMG', 'BAC', 'JPM', 'GME', 'HD'],key="new20")
     amount3 = st.sidebar.number_input("How many shares?",1,100,4, key="new4")
     tickers.append(ticker3)
     amounts.append(amount3)
@@ -55,7 +56,7 @@ for ticker in tickers:
 fig, ax = plt.subplots(figsize=(14,7))
 
 ax.set_facecolor('black')
-ax.figure.set_facecolor('#FFFFFF')
+ax.figure.set_facecolor('#121212')
 
 ax.tick_params(axis='x', color='white')
 ax.tick_params(axis='y', color='white')
